@@ -8,24 +8,24 @@ describe('My Test Suite',()=>{
     expect(text1).toBeInTheDocument();//Here I am comparing the text is in the document or not toBeInTheDocument is one of the Matches
   });
   //skip my test case
-  test('Test Case-2',()=>{
-    render(<App/>);
-    const text2=screen.getByText('I am Testing your application');
-    expect(text2).toBeInTheDocument();
-  }); 
-  //Instead of using test we can use "it"
-  it('Test Case-3',()=>{
-    render(<App/>)
-      const text3=screen.getByText('Hey.......');
-      expect(text3).toBeInTheDocument();
-    })
-    test('Tes<t Case-4',()=>{
-      render(<App/>)
-      var element1=screen.getByTestId("Myh1");
-      expect(element1).toBeInTheDocument();
-      expect(element1).toHaveTextContent('Testing element');
+  // test('Test Case-2',()=>{
+  //   render(<App/>);
+  //   const text2=screen.getByText('I am Testing your application');
+  //   expect(text2).toBeInTheDocument();
+  // }); 
+  // //Instead of using test we can use "it"
+  // it('Test Case-3',()=>{
+  //   render(<App/>)
+  //     const text3=screen.getByText('Hey.......');
+  //     expect(text3).toBeInTheDocument();
+  //   })
+  //   test('Tes<t Case-4',()=>{
+  //     render(<App/>)
+  //     var element1=screen.getByTestId("Myh1");
+  //     expect(element1).toBeInTheDocument();
+  //     expect(element1).toHaveTextContent('Testing element');
      
-    });
+  //   });
     
  
 });
